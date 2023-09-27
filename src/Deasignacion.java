@@ -8,6 +8,7 @@ public class Deasignacion {
     public static void operadorsumaigual(){
         int a = 5;
         a+=5;
+        System.out.println(a);
 
     
     }
