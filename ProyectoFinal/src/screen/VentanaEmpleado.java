@@ -184,6 +184,90 @@ public class VentanaEmpleado extends JFrame implements ActionListener{
         emailJLabel.setHorizontalAlignment(SwingConstants.CENTER);
         add(emailJLabel, gbc);
 
-        //
+        //emailfield
+        gbc.gridx = 1;
+        gbc.gridy = 5;
+
+        gbc.gridwidth = 2;
+
+        emailJTextField = new TextField(100);
+        add(emailJTextField, gbc);
+
+        //fechanacimientotexto
+        gbc.gridx = 0;
+        gbc.gridy = 6;
+
+        gbc.gridwidth = 1;
+
+        fechaJLabel = new JLabel("Fecha de Nacimiento: ");
+        fechaJLabel.setHorizontalAlignment(SwingConstants.CENTER);
+        add(fechaJLabel, gbc);
+        //fechadenacimientofield
+
+        gbc.gridx = 1;
+        gbc.gridy = 6;
+
+        gbc.gridwidth = 2;
+
+        fechaJDateChooser = new JDateChooser();
+        add(fechaJDateChooser, gbc);
+
+        //generotexto
+        gbc.gridx = 0;
+        gbc.gridy = 7;
+
+        gbc.gridwidth = 1;
+
+        generoJLabel = new JLabel("Género: ");
+        generoJLabel.setHorizontalAlignment(SwingConstants.CENTER);
+        add(generoJLabel, gbc);
+
+        //generoboton
+        gbc.gridx = 1;
+        gbc.gridy = 7;
+
+        gbc.gridwidth = 2;
+
+        generoJComboBox = new JComboBox<String>();
+        add(generoJComboBox, gbc);
+
+        //boton guardar
+
+        gbc.gridx = 0;
+        gbc.gridy = 8;
+
+        gbc.gridwidth = 1;
+
+        guardarJButton = new JButton("Guardar");
+        guardarJButton.addActionListener(this);
+        add(guardarJButton, gbc);
+
+        gbc.gridx = 1;
+        gbc.gridy = 8;
+
+        gbc.gridwidth = 1;
+
+        modificarJButton = new JButton("Guardar");
+        modificarJButton.addActionListener(this);
+        add(modificarJButton, gbc);
+
+        gbc.gridx = 2;
+        gbc.gridy = 8;
+
+        gbc.gridwidth = 1;
+
+        eliminarJButton = new JButton("Guardar");
+        eliminarJButton.addActionListener(this);
+        add(eliminarJButton, gbc);
+
+        gbc.gridx = 3;
+        gbc.gridy = 8;
+
+        gbc.gridwidth = 1;
+
+        limpiarJButton = new JButton("Guardar");
+        limpiarJButton.addActionListener(this);
+        add(limpiarJButton, gbc);
+
         }
 }
